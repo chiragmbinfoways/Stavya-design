@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stavya </title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="../plugins/select2/css/select2.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+
+    <!-- Custom styles for ourApp-->
+    <link href="../dist/css/style.css" rel="stylesheet">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <!-- <li class="nav-item d-none d-sm-inline-block">
+                    <a href="index3.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>  -->
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown user-menu">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                        <img src="../dist/img/AdminLTELogo.png" class="user-image img-circle elevation-2" alt="User Image">
+                        <span class="d-none d-md-inline"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <!-- User image -->
+                        <li class="user-header bg-primary">
+                            <img src="../dist/img/avatar.png" class="img-circle elevation-2" alt="User Image">
+
+                            <p>
+                           Chirag Pariyani
+                                <!-- <small>Member since Nov. 2012</small> -->
+                            </p>
+                        </li>
+                        
+                        <!-- Menu Footer-->
+                        <li class="user-footer">
+                            
+                            <a href="" class="btn btn-default btn-flat">Profile</a>
+                            <a href="" class="btn btn-default btn-flat float-right">Sign out</a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Notifications Dropdown Menu -->
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-bell"></i>
+                        <span class="badge badge-warning navbar-badge">15</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <span class="dropdown-item dropdown-header bg-dark">15 Notifications</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i> 4 new messages
+                            <span class="float-right text-muted text-sm">3 mins</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-users mr-2"></i> 8 friend requests
+                            <span class="float-right text-muted text-sm">12 hours</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-file mr-2"></i> 3 new reports
+                            <span class="float-right text-muted text-sm">2 days</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer text-primary">See All Notifications</a>
+                    </div>
+                </li> -->
+                <li class="nav-item">
+                    <a href="" class="btn btn-link" data-toggle="tooltip" title="AdminSttings">
+                        <i class="fas fa-cogs"></i>
+                    </a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar main-sidebar-custom sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="" class="brand-link">
+                <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <span class="brand-text font-weight-light">Stavya Spine</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                
+
+                <!-- SidebarSearch Form -->
+                <div class="form-inline mt-3">
+                    <div class="input-group" data-widget="sidebar-search">
+                        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-sidebar">
+                                <i class="fas fa-search fa-fw"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                        <li class="nav-item">
+                            <a href="" class="nav-link ">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Dashboard
+                                </p>
+                            </a>
+                        </li>
+              
+                                 <!-- Departments  -->
+                                
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link " >
+                                        <i class=" nav-icon fas fa-user-tie"></i>
+                                        <p>
+                                          Master
+                                            <i class="right fas fa-angle-left"></i>
+                                        </p>
+                                    </a>
+                                    <ul class="nav nav-treeview">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link " >
+                                                <i class="nav-icon fas fa-building"></i>
+                                                <p>
+                                                  Department
+                                                    <i class="right fas fa-angle-left"></i>
+                                                </p>
+                                            </a>
+                                            <ul class="nav nav-treeview">
+                                                <li class="nav-item">
+                                                    <a href="listDepartment.html" class="nav-link ">
+                                                        <i class="fas fa-list pr-2"> </i>
+                                                        <p>Department List</p>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="addDepartment.html" class="nav-link ">
+                                                        <i class="fas fa-plus pr-2"></i>
+                                                        <p>Add Department</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link " >
+                                                <i class="nav-icon fas fa-book"></i>
+                                                <p>
+                                                  Category
+                                                    <i class="right fas fa-angle-left"></i>
+                                                </p>
+                                            </a>
+                                            <ul class="nav nav-treeview">
+                                                <li class="nav-item">
+                                                    <a href="listCategory.html" class="nav-link ">
+                                                        <i class="fas fa-list pr-2"> </i>
+                                                        <p>Category List</p>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="addCategory.html" class="nav-link ">
+                                                        <i class="fas fa-plus pr-2"></i>
+                                                        <p>Add Category</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link " >
+                                                <i class="nav-icon fas fa-graduation-cap"></i>
+                                                <p>
+                                                  Grade
+                                                    <i class="right fas fa-angle-left"></i>
+                                                </p>
+                                            </a>
+                                            <ul class="nav nav-treeview">
+                                                <li class="nav-item">
+                                                    <a href="listGrade.html" class="nav-link ">
+                                                        <i class="fas fa-list pr-2"> </i>
+                                                        <p>Grade List</p>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="addGrade.html" class="nav-link ">
+                                                        <i class="fas fa-plus pr-2"></i>
+                                                        <p>Add Grade</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link " >
+                                                <i class=" nav-icon fas fa-plane-departure"></i>
+                                                <p>
+                                                  Designation
+                                                    <i class="right fas fa-angle-left"></i>
+                                                </p>
+                                            </a>
+                                            <ul class="nav nav-treeview">
+                                                <li class="nav-item">
+                                                    <a href="listDesignation.html" class="nav-link ">
+                                                        <i class="fas fa-list pr-2"> </i>
+                                                        <p>Designation List</p>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="addDesignation.html" class="nav-link ">
+                                                        <i class="fas fa-plus pr-2"></i>
+                                                        <p>Add Designation</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link " >
+                                                <i class="nav-icon far fa-handshake"></i>
+                                                <p>
+                                                  Relation
+                                                    <i class="right fas fa-angle-left"></i>
+                                                </p>
+                                            </a>
+                                            <ul class="nav nav-treeview">
+                                                <li class="nav-item">
+                                                    <a href="listRelation.html" class="nav-link ">
+                                                        <i class="fas fa-list pr-2"> </i>
+                                                        <p>Relation List</p>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="addRelation.html" class="nav-link ">
+                                                        <i class="fas fa-plus pr-2"></i>
+                                                        <p>Add Relation</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link " >
+                                                <i class="nav-icon fas fa-print"></i>
+                                                <p>
+                                                  Document
+                                                    <i class="right fas fa-angle-left"></i>
+                                                </p>
+                                            </a>
+                                            <ul class="nav nav-treeview">
+                                                <li class="nav-item">
+                                                    <a href="listDocument.html" class="nav-link ">
+                                                        <i class="fas fa-list pr-2"> </i>
+                                                        <p>Document List</p>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="addDocument.html" class="nav-link ">
+                                                        <i class="fas fa-plus pr-2"></i>
+                                                        <p>Add Document</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link " >
+                                                <i class="nav-icon fas fa-school"></i>
+                                                <p>
+                                                  Education-Level
+                                                    <i class="right fas fa-angle-left"></i>
+                                                </p>
+                                            </a>
+                                            <ul class="nav nav-treeview">
+                                                <li class="nav-item">
+                                                    <a href="listEducation.html" class="nav-link ">
+                                                        <i class="fas fa-list pr-2"> </i>
+                                                        <p>Education-Level List</p>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="addEducation.html" class="nav-link ">
+                                                        <i class="fas fa-plus pr-2"></i>
+                                                        <p>Add Education-level</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link " >
+                                                <i class="nav-icon fas fa-border-style"></i>
+                                                <p>
+                                                  Education-Type
+                                                    <i class="right fas fa-angle-left"></i>
+                                                </p>
+                                            </a>
+                                            <ul class="nav nav-treeview">
+                                                <li class="nav-item">
+                                                    <a href="listEducationType.html" class="nav-link ">
+                                                        <i class="fas fa-list pr-2"> </i>
+                                                        <p> Education-Type List</p>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="addEducationType.html" class="nav-link ">
+                                                        <i class="fas fa-plus pr-2"></i>
+                                                        <p>Add  Education-Type</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link " >
+                                                <i class="nav-icon fas fa-university"></i>
+                                                <p>
+                                                  Bank
+                                                    <i class="right fas fa-angle-left"></i>
+                                                </p>
+                                            </a>
+                                            <ul class="nav nav-treeview">
+                                                <li class="nav-item">
+                                                    <a href="listBank.html" class="nav-link ">
+                                                        <i class="fas fa-list pr-2"> </i>
+                                                        <p> Bank List</p>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="addBank.html" class="nav-link ">
+                                                        <i class="fas fa-plus pr-2"></i>
+                                                        <p>Add Bank</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link " >
+                                                <i class="nav-icon fas fa-signal"></i>
+                                                <p>
+                                                  Job-Status
+                                                    <i class="right fas fa-angle-left"></i>
+                                                </p>
+                                            </a>
+                                            <ul class="nav nav-treeview">
+                                                <li class="nav-item">
+                                                    <a href="listJobStatus.html" class="nav-link ">
+                                                        <i class="fas fa-list pr-2"> </i>
+                                                        <p>  Job-Status List</p>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="addJobStatus.html" class="nav-link ">
+                                                        <i class="fas fa-plus pr-2"></i>
+                                                        <p>Add Job-Status</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link " >
+                                                <i class="nav-icon fas fa-code-branch"></i>
+                                                <p>
+                                                  Branch
+                                                    <i class="right fas fa-angle-left"></i>
+                                                </p>
+                                            </a>
+                                            <ul class="nav nav-treeview">
+                                                <li class="nav-item">
+                                                    <a href="listBranch.html" class="nav-link ">
+                                                        <i class="fas fa-list pr-2"> </i>
+                                                        <p>Branch List</p>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="addBranch.html" class="nav-link ">
+                                                        <i class="fas fa-plus pr-2"></i>
+                                                        <p>Add Branch</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link " >
+                                                <i class="nav-icon fas fa-flag-usa"></i>
+                                                <p>
+                                                  State
+                                                    <i class="right fas fa-angle-left"></i>
+                                                </p>
+                                            </a>
+                                            <ul class="nav nav-treeview">
+                                                <li class="nav-item">
+                                                    <a href="listState.html" class="nav-link ">
+                                                        <i class="fas fa-list pr-2"> </i>
+                                                        <p>State List</p>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="addState.html" class="nav-link ">
+                                                        <i class="fas fa-plus pr-2"></i>
+                                                        <p>Add State</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link " >
+                                                <i class="nav-icon fas fa-city"></i>
+                                                <p>
+                                                  City
+                                                    <i class="right fas fa-angle-left"></i>
+                                                </p>
+                                            </a>
+                                            <ul class="nav nav-treeview">
+                                                <li class="nav-item">
+                                                    <a href="listCity.html" class="nav-link ">
+                                                        <i class="fas fa-list pr-2"> </i>
+                                                        <p>City List</p>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="addcity.html" class="nav-link ">
+                                                        <i class="fas fa-plus pr-2"></i>
+                                                        <p>Add City</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                    <!-- Employee  -->
+
+
+
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link " >
+                                        <i class="nav-icon fas fa-user-friends"></i>
+                                        <p>
+                                            Employee
+                                            <i class="right fas fa-angle-left"></i>
+                                        </p>
+                                    </a>
+                                    <ul class="nav nav-treeview">
+                                        <li class="nav-item">
+                                            <a href="listEmployee.html" class="nav-link ">
+                                                <i class="nav-icon fas fa-list pr-2"> </i>
+                                                <p>Employee List </p> 
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="addEmployee.html" class="nav-link ">
+                                                <i class="nav-icon fas fa-plus pr-2"></i>
+                                                <p>Add Employee</p> 
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="documentsEmployee.html" class="nav-link ">
+                                                <i class="nav-icon fas fa-print"></i>
+                                                <p>Employee Documents</p> 
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="employeeDependent.html" class="nav-link ">
+                                                <i class="nav-icon fas fa-shield-alt"></i>
+                                                <p> Employee dependent</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                  
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+
+            <!-- /.sidebar-custom -->
+        </aside>
+
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper" style="min-height: 269px;">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+              <div class="container-fluid">
+                <div class="row mb-2">
+                  <div class="col-sm-6">
+                    <h1 class="m-0">Add Education-level</h1>
+                  </div><!-- /.col -->
+                  <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                      <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                      <li class="breadcrumb-item"><a href="#">Education-level</a></li>
+                      <li class="breadcrumb-item active">Add</li>
+                    </ol>
+                  </div><!-- /.col -->
+                </div><!-- /.row -->
+              </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row flash-message">
+                        <div class="col-12">
+                                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Default box -->
+                            <!-- Profile Update box -->
+        
+        
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">New Education-level Add Form</h3>
+                                    <div class="card-tools">
+                                        <a href="./listEducation.html" class="btn btn-sm btn-secondary">
+                                            <i class="fas fa-eye"></i> View All Education-levels
+                                        </a>
+                                        <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+        
+                                <div class="card-body">
+                                    <form action="./listCategory.html" method="post">
+                                        <input type="hidden" name="_token" value="dCAWptXwpjCNpyOFa8LniDfw9NZIN5N93teo8IdI">
+                                        <div class="form-row">
+                                            <div class="col-md-6 mb-3">
+                                                <label for="name">Education-level Code</label>
+                                                <input type="text" class="form-control form-control-sm " id="code" name="code" placeholder="Code" value="">
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label for="name">Education-level </label>
+                                                <input type="text" class="form-control form-control-sm " id="name" name="name" placeholder="Name" value="">
+                                            </div>
+                                        </div>
+                                        <!-- /.card-body -->   
+                                </form>
+                            </div>
+                                <!-- /.card -->
+                                <div class="card-footer">
+                                    <button type="submit" class="btn btn-secondary btn-block">Submit <i class="fas fa-angle-double-right"></i></button>
+                                </div>
+                                <!-- /.card-footer-->
+                            
+        
+        
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+            <!-- /.content -->
+          </div>
+        <!-- /.content-wrapper -->
+
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-block text-danger">
+                <strong><span id='ct6'></span></strong>
+            </div>
+            <strong>Copyright &copy; 2022 <a href="https://pcubesoftechs.com">STAVYA SPINE SOLUTIONS</a></strong> All rights
+            reserved.
+        </footer>
+
+
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="../plugins/jszip/jszip.min.js"></script>
+    <script src="../plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="../plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <!-- Select2 -->
+    <script src="../plugins/select2/js/select2.full.min.js"></script>
+    <!-- Sweet Alert js -->
+    <script src="../dist/js/sweetalert.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../dist/js/demo.js"></script>
+    <!-- Custom Scripts -->
+    <script src="../dist/js/customscript.js"></script>
+</body>
+
+</html>
